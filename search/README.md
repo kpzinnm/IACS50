@@ -1,10 +1,11 @@
 Primeiramente, vamos dar uma breve introdução ao algoritmo de busca. Imagine que temos que criar um algortimo que resolva um quebra-cabeça de 15 números, então recebemos um estado inicial contendo o estado no qual o problema vai começar:
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/141662f0-3213-4fc7-ad15-0e8cd66dd4a5/bbee75a6-4cef-4036-96d6-182eb9d310e2/Untitled.png)
+![image](https://github.com/kpzinnm/IACS50/assets/100965133/a7deb717-4db7-4bb9-b74a-45c83a9abb05)
+
 
 Esse é o nosso estado inicial, o agente é quem recebe esse estado. Agora, vamos mostrar dizer ao algoritmo qual é o estado desejado:
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/141662f0-3213-4fc7-ad15-0e8cd66dd4a5/06c74523-aa71-424b-b302-922c03a008a8/Untitled.png)
+![Captura de tela de 2023-10-23 09-29-24](https://github.com/kpzinnm/IACS50/assets/100965133/be75eaac-b48d-4be4-b08f-ba974fd80676)
 
 Esse é o estado que nosso algoritmo deve chegar. O nosso desafio é fazer o agente sair do estado inicial até o final. Mas, como fazemos isso?
 
@@ -12,7 +13,7 @@ Esse é o estado que nosso algoritmo deve chegar. O nosso desafio é fazer o age
 
 A primeira coisa que o agente deve fazer é analisar quais são as ações possíveis, no nosso exemplo, o agente pode mover o 12 para baixo ou o 15 para a direita. Essas duas ações vão gerar dois novos estados que são filhos do estado anterior. Cada novo estado realizar o mesmo processo, assim teremos 4 novos estados. Com isso, estamos formando um grafo de árvore:
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/141662f0-3213-4fc7-ad15-0e8cd66dd4a5/9e701c60-46d6-4211-8212-2717035cfed8/Untitled.png)
+![Captura de tela de 2023-10-23 09-35-34](https://github.com/kpzinnm/IACS50/assets/100965133/aa3380bf-575b-4bae-8a86-cce43428109b)
 
 ---
 
